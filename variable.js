@@ -40,7 +40,7 @@ console.log(typeof(employeeCount));
 
 //  Data Types in JavaScript
 // 1, number
-// 2, Sttring
+// 2, String
 // 3, Boolean
 // 4, Undefined
 // 5, null
