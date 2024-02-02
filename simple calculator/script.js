@@ -1,0 +1,25 @@
+function performAddition(){
+    let num1=document.querySelector("#box1").value;
+    let num2=document.querySelector("#box2").value;
+    let result=(+num1)+(+num2);
+    // alert(result)
+    document.querySelector("#resultBox").innerHTML=`Addition result of ${num1} + ${num2}= ${result}`;
+}
+function performSubtraction(){
+    let num1=+box1.value;
+    let num2=+box2.value;
+    let result=(num1)-(num2)
+    document.querySelector("#resultBox").innerHTML=`Subtraction result of ${num1} - ${num2}= ${result}`;
+}
+function performMultiplication(){
+    let num1=+box1.value;
+    let num2=+box2.value;
+    let result=num1*num2;
+    document.querySelector("#resultBox").innerHTML=`Multiplication result of ${num1} x ${num2}= ${result}`;
+}
+function performDivision(){
+    let num1=+box1.value;
+    let num2=+box2.value;
+    let result=num1/num2;
+    document.querySelector("#resultBox").innerHTML=`Division result of ${num1} / ${num2}= ${result}`;
+}

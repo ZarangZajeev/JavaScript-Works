@@ -12,20 +12,26 @@ var employees=[
         
 ]
 // all employee name
-console.log(employees.map(o=>o.name));
+// console.log(employees.map(o=>o.name));
 
 // Highest salary
-console.log(employees.reduce((o1,o2)=>o1.salary>o2.salary?o1:o2));
+// console.log(employees.reduce((o1,o2)=>o1.salary>o2.salary?o1:o2));
 
 // employee with lowest salary
-console.log(employees.reduce((o1,o2)=>o1.salary<o2.salary?o1:o2));
+// console.log(employees.reduce((o1,o2)=>o1.salary<o2.salary?o1:o2));
 
 // employee name whose location tvm
-console.log(employees.filter(o=>o.location=="tvm").map(o=>o.name));
+// console.log(employees.filter(o=>o.location=="tvm").map(o=>o.name));
 
 // sort employees wrt salary by desc
-employees.sort((o1,o2)=>o2.salary-o1.salary);
-console.log(employees);
+// employees.sort((o1,o2)=>o2.salary-o1.salary);
+// console.log(employees);
 
 // it employees where in banglore 
-console.log(employees.filter(o=>o.department=="it" && o.location=="bnglr").map(o=>o.name));
+// console.log(employees.filter(o=>o.department=="it" && o.location=="bnglr").map(o=>o.name));
+
+// department wise employee count ?
+dept_count={}
+employees.map(o=>o.department).map(d=>d in dept_count?dept_count[d]+=1:dept_count[d]=1)
+console.log(dept_count);
+// Largest department of employees ?
